@@ -12,3 +12,34 @@ const addTwo = (a : number, b : number) : number => {
 }
 
 console.log(addTwo(100,20))
+
+// Array and Tuple 
+
+const arr : string [] = ['Javascript', "react"]        // String
+
+const numArr : number []  = [18,8]     //number 
+
+const dhakaLatLong : readonly[number,number] = [23.8103, 90.4125]
+
+// default 
+
+const concatName =(firstName : string , lastName?: string) => {               // eikane ? mark haoar reason hocce kono jinish function a thkleo pare na thakteo pare
+    if(!lastName) {
+        return firstName;
+    }
+
+    return firstName + " " + lastName;
+};
+
+// console.log(concatName("Dipto"));
+// console.log(concatName("Dipto","Prethul"))
+
+// default parameters 
+
+const greetings = (firstName : string,greeting : string = "Hello") =>{
+    console.log(greeting + " " + firstName);
+};
+greetings("Dipto",undefined);
+
+// rest parameters 
+
