@@ -1,0 +1,14 @@
+{
+  "name": "typescript-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "problem-1": "npm run build && node dist/problem-1.js",
+    "problem-2": "npm run build && node dist/problem-2.js"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
